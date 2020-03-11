@@ -22,16 +22,22 @@ Bytes 5-7, these are payload bytes allready containing ascii characters "Blu" fr
 
 ## Second Message
 Byte 0 is the index of multi message.(C0)
+
 Bytes 1-7 are payload bytes, "etooth" from 1 to 6
+
 Byte 7, is the most interesting one, as it does indicate line break and that there is 5 ascii characters coming up
 
 ## Third Message 
 Byte 0 is the index of multi message. (C1)
+
 Bytes 1-7 are payload again
+
 Byte 6, this is most likely padding byte
+
 Byte 7, this is line break again and indication of 2 more characters coming(?)
 
 ## last message
+
 Byte 0 is the index of multi message. (C3)
 Byte 1 & 2 are always (FF) for "Bluetooth" related messages, might have something to do with the BT icon shown on the screen
 
