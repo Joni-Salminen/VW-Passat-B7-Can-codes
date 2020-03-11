@@ -2,7 +2,7 @@
 Everything below is represented as hexadecimal numbers!
 
 
-Table below repsesents message flow from RNS-315 -> MFD, when it writes "BLuetooth audio" on the screen.
+Table below repsesents message flow from RNS-315 -> MFD, when it writes "Bluetooth audio" on the screen.
 All the texts are written with same schema to the "AUDIO" page of the display, for navigation and rest i believe its all the same, with the expection of different ID used when transmitting, but i have not looked into that too deeply yet.
 | ID | DLC | Byte 7 | Byte 6 | Byte 5 | Byte 4 | Byte 3 | Byte 2 | Byte 1 | Byte 0
 | ------ | ------ | ----- | ------ | ------ | ------ | ------ | ----- | ----- | ----- |
@@ -36,7 +36,7 @@ Byte 6, this is most likely padding byte
 
 Byte 7, this is line break again and indication of 2 more characters coming(?)
 
-## last message
+## Last message
 
 Byte 0 is the index of multi message. (C3)
 Byte 1 & 2 are always (FF) for "Bluetooth" related messages, might have something to do with the BT icon shown on the screen
